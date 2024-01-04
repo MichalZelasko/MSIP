@@ -1,9 +1,10 @@
 # MSIP
-[Polski]
 
-REST application to handle access to MSIP system.
+## [Polski]
 
-Instalacja
+## REST application to handle access to MSIP system.
+
+### Instalacja
 
 Aby pobrać: "Code" - nad listą plików i katalogów po prawej stronie i -> "Download Zip". Następnie zapisany na komputerze plik należy rozpakować (Windows: prawy przycisk myszy -> Wyodrębnij wsszystkie, Linux: "sudo apt-get install unzip" i "unzip archive.zip") i przejść do nadrzędnego katalogu projektu.
 
@@ -26,7 +27,7 @@ W kolejnym kroku należy przejść do podkatalogu /src i wykonać polecenie
 UWAGA: w niektórych systemach operacyjnych wymagane jest zastosowanie polecenia python3 zamiast python.
 
 
-Użytkowanie:
+### Użytkowanie:
 
 Aplikacja umozliwia wykonywanie następujących komend (każda komenda i argument zostają przekazane do aplikacji w momencie zatwierdzenia poprzez wciśnięcie przycisku Enter):
 
@@ -120,11 +121,12 @@ history          -> Wyświetla listę przekazanych argumentów (wpisanych polece
 
 ============================================================================
 
-[English]
+## [English]
 
-Installation
+## REST application for handling access to the MSIP system.
 
-REST application for handling access to the MSIP system.
+### Installation
+
 To download: "Code" - above the list of files and directories on the right and -> "Download Zip". Then, unpack the file saved on your computer (Windows: right mouse button -> Extract all, Linux: "sudo apt-get install unzip" and "unzip archive.zip") and go to the parent project directory.
 
 Before running the application, make sure that Python is installed on your computer (recommended version 3.10.12) - test using the command (access to the command line on Windows in the File Browser: File -> Open Windows Powershell (hover and right) -> Open Windows Powershell as Administrator):
@@ -145,7 +147,7 @@ In the next step, go to the /src subdirectory and execute the command
 
 NOTE: Some operating systems require the python3 command instead of python.
 
-Usage:
+### Usage:
 
 The application allows you to execute the following commands (each command and argument are transferred to the application upon confirmation by pressing the Enter button):
 
