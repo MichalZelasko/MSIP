@@ -1,5 +1,6 @@
 # MSIP
 [Polski]
+
 REST application to handle access to MSIP system.
 
 Przed uruchomieniem aplikacji należy upewnic się, że na komputerze zainstalowany jest Python (wersja zalecane 3.10.12) - test za pomoca komendy:
@@ -21,6 +22,7 @@ python main.py
 UWAGA w niektórych systemach operacyjnych wymagane jest zastosowanie polecenia python3 zamiast python.
 
 [English]
+
 REST application for handling access to the MSIP system.
 Before running the application, make sure that Python (version 3.10.12) is installed on your desktop computer - test using the command:
 
