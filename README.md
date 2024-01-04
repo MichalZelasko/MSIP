@@ -21,6 +21,8 @@ python main.py
 
 UWAGA w niektórych systemach operacyjnych wymagane jest zastosowanie polecenia python3 zamiast python.
 
+ 
+
 [English]
 
 REST application for handling access to the MSIP system.
