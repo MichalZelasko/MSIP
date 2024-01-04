@@ -31,27 +31,49 @@ Użytkowanie:
 Aplikacja umozliwia wykonywanie następujących komend (każda komenda i argument zostają przekazane do aplikacji w momencie zatwierdzenia poprzez wciśnięcie przycisku Enter):
 
 coordinates      -> Znajduje współrzędne działki w oparciu o jej dane:
+
                         -> Wamaga wprowadzenia oznaczenia obszaru ewidencyjnego i numer obrębu [np. S-23],
+
                         -> Wymaga wprowadzenia numeru działki ewidencyjnej.
+
 data             -> Znajduje informacje o działce w oparciu o jej współrzędne
+
                         -> Wymaga wprowadzenia współrzędnej X: 
+
                         Liczba pomiedzy 7413470.40 i 7443881.84 (rzeczywisty zakres) lub liczbę pomiędzy {0.0} i {100.0} (zostanie przeskalowane na zakres rzeczywisty),
+
                         -> Wymaga wprowadzenia współrzędnej Y: 
+
                         Liczba pomiedzy 5537348.99 i 5555025.62 (rzeczywisty zakres) lub liczbę pomiędzy {0.0} i {100.0} (zostanie przeskalowane na zakres rzeczywisty).
+
 handler          -> Znajduje informacje o wszystkich działkach ze wskazanego pliku
+
                         -> Wymaga wprowadzenia nazwy pliku z indeksami działek ewidencyjnych (lokalizacja pliku "../files/input/[filename]").
+
 parser           -> Zamienia plik .txt na plik .csv.
+
 points           -> Wylosuj wskazaną liczbę punktów i znajdź dane dla działek związanych z tymi punktami:
+
                         -> Wymaga wprowadzenia liczby punktów do wylosowania.
+
 unbuild          -> Wylicza wszystkie niezabudowane działki:
+
                         -> Wymaga wprowadzenia nazwy pliku, w którym informacje mają zostać zapisane (plik zostanie zapisany w "../files/output/[filename]").
+
 test             -> Testuje aplikację.
+
 list             -> Wymienia wszystkie dostepne usługi.
+
 help             -> Wyświetla pomoc.
+
 info             -> Wyświetla informacje o aplikacji.
+
 exit             -> Wyjsie z aplikacji - można wpisać w każdym do tego przenaczonym miejscu.
+
 language         -> Zmienia język [pl -> en].
+
 prompt           -> Zmienia symbol podpowiedzi.
+
 history          -> Wyświetla listę przekazanych argumentów (wpisanych poleceń i arguemntów).
 
 ============================================================================
@@ -86,25 +108,47 @@ Usage:
 The application allows you to execute the following commands (each command and argument are transferred to the application upon confirmation by pressing the Enter button):
 
 coordinates     -> Finds the coordinates of a plot based on its data:
+
                          -> Requires entering the registration area designation and precinct number [e.g. S-23],
+
                          -> Requires entering the registration plot number.
+
 data            -> Finds information about a plot based on its coordinates
+
                          -> Requires input of the X coordinate:
+
                          A number between 7413470.40 and 7443881.84 (actual range) or a number between {0.0} and {100.0} (will be scaled to actual range),
+
                          -> Requires entering the Y coordinate:
+
                          A number between 5537348.99 and 5555025.62 (actual range) or a number between {0.0} and {100.0} (will be scaled to actual range).
+
 handler         -> Finds information about all plots from the specified file
+
                          -> Requires entering the file name with indexes of cadastral plots (file location "../files/input/[filename]").
+
 parser          -> Converts a .txt file to a .csv file.
+
 points          -> Randomize the indicated number of points and find data for the plots related to these points:
+
                          -> Requires entering the number of points to be drawn.
+
 unbuild         -> Lists all unbuilt plots:
+
                          -> Requires entering the name of the file in which the information is to be saved (the file will be saved in "../files/output/[filename]").
+
 test            -> Tests the application.
+
 list            -> Lists all available services.
+
 help            -> Displays help.
+
 info            -> Displays information about the application.
+
 exit            -> Exit the application - can be entered in any designated place.
+
 language        -> Changes the language [en -> pl].
+
 prompt          -> Changes the prompt symbol.
+
 history         -> Displays a list of passed arguments (entered commands and arguments).
