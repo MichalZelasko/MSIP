@@ -120,8 +120,8 @@ class Configuration:
             "Błąd podczas wykonywania polecenia\nCzy wprowadziłeś/-aś poprawne argumenty wykonania",
             "Proszę wprowadź oznaczenia obszaru ewidencyjnego i numer obrębu [np. S-23]:",
             "Proszę wprowadzić numer działki ewidencyjnej:",
-            f"Proszę wprowadzić współrzędną X: \nLiczba pomiedzy {round(self.min_x, 2)} i {round(self.max_x, 2)} (rzeczywisty zakres) \nlub liczbę pomiędzy {0.0} i {100.0} (zostanie przeskalowane na zakres rzeczywisty)",
-            f"Proszę wprowadzić współrzędną Y: \nLiczba pomiędzy {round(self.min_y, 2)} i {round(self.max_y, 2)} (rzeczywisty zakres) \nlub liczbę pomiędzy {0.0} i {100.0} (zostanie przeskalowane na zakres rzeczywisty)",
+            f"Proszę wprowadzić współrzędną X: \nLiczba pomiedzy {round(self.min_x, 2)} i {round(self.max_x, 2)} (rzeczywisty zakres) \nlub liczbę pomiędzy {0.0} i {self.scale} (zostanie przeskalowane na zakres rzeczywisty)",
+            f"Proszę wprowadzić współrzędną Y: \nLiczba pomiędzy {round(self.min_y, 2)} i {round(self.max_y, 2)} (rzeczywisty zakres) \nlub liczbę pomiędzy {0.0} i {self.scale} (zostanie przeskalowane na zakres rzeczywisty)",
             f"Proszę wprowadzic nazwę pliku z indeksami działek ewidencyjnych (lokalizacja pliku {self.input_directory}[filename]):",
             f"Proszę wprowadzic liczbę punktów do wylosowania:",
             f"Proszę wprowadzić nazwę pliku, w którym informacje mają zostac zapisane (plik zostanie zapisany w {self.output_directory}[filename]):",
@@ -161,6 +161,64 @@ Description: Application can be used to download data from https://msip.um.krako
 parse gathered data and produce output files containing all information regarding particular polygons. \n \
 Main objective of the project is to enable access to MSIP web service for master degree students realizing master degrees \n \
 requiring access to above mentioned polygon data."
+        
+        self.help_en                = f" \
+The application allows you to execute the following commands (each command and argument are transferred to the application upon confirmation by pressing the Enter button): \n \
+\n \
+coordinates     -> Finds the coordinates of a plot based on its data: \n \
+                        -> Requires entering the registration area designation and precinct number [e.g. S-23], \n \
+                        -> Requires entering the registration plot number. \n \
+data            -> Finds information about a plot based on its coordinates \n \
+                        -> Requires input of the X coordinate: \n \
+                        A number between {self.min_x} and {self.max_x} (actual range) \n \
+                        or a number between {0.0} and {self.scale} (will be scaled to actual range), \n \
+                        -> Requires entering the Y coordinate: \n \
+                        A number between {self.min_y} and {self.max_y} (actual range) \n \
+                        or a number between {0.0} and {self.scale} (will be scaled to actual range). \n \
+handler         -> Finds information about all plots from the specified file \n \
+                        -> Requires entering the file name with indexes of cadastral plots (file location \"{self.input_directory}/[filename]\"). \n \
+parser          -> Converts a .txt file to a .csv file. \n \
+points          -> Randomize the indicated number of points and find data for the plots related to these points: \n \
+                        -> Requires entering the number of points to be drawn. \n \
+unbuild         -> Lists all unbuilt plots: \n \
+                        -> Requires entering the name of the file in which the information is to be saved (the file will be saved in \"{self.output_directory}[filename]\"). \n \
+test            -> Tests the application. \n \
+list            -> Lists all available services. \n \
+help            -> Displays help. \n \
+info            -> Displays information about the application. \n \
+exit            -> Exit the application - can be entered in any designated place. \n \
+language        -> Changes the language [en -> pl]. \n \
+prompt          -> Changes the prompt symbol. \n \
+history         -> Displays a list of passed arguments (entered commands and arguments). \n"
+        
+        self.help_pl                = f" \
+Aplikacja umozliwia wykonywanie następujących komend (każda komenda i argument zostają przekazane do aplikacji w momencie zatwierdzenia poprzez wciśnięcie przycisku Enter): \n \
+ \n \
+coordinates     -> Znajduje współrzędne działki w oparciu o jej dane: \n \
+                        -> Wamaga wprowadzenia oznaczenia obszaru ewidencyjnego i numer obrębu [np. S-23], \n \
+                        -> Wymaga wprowadzenia numeru działki ewidencyjnej. \n \
+data            -> Znajduje informacje o działce w oparciu o jej współrzędne \n \
+                        -> Wymaga wprowadzenia współrzędnej X:  \n \
+                        Liczba pomiedzy {self.min_x} i {self.max_x} (rzeczywisty zakres) \n \
+                        lub liczbę pomiędzy {0.0} i {self.scale} (zostanie przeskalowane na zakres rzeczywisty), \n \
+                        -> Wymaga wprowadzenia współrzędnej Y:  \n \
+                        Liczba pomiedzy {self.min_y} i {self.max_y} (rzeczywisty zakres) lub \n \
+                        liczbę pomiędzy {0.0} i {self.scale} (zostanie przeskalowane na zakres rzeczywisty). \n \
+handler         -> Znajduje informacje o wszystkich działkach ze wskazanego pliku \n \
+                        -> Wymaga wprowadzenia nazwy pliku z indeksami działek ewidencyjnych (lokalizacja pliku \"{self.input_directory}[filename]\"). \n \
+parser          -> Zamienia plik .txt na plik .csv. \n \
+points          -> Wylosuj wskazaną liczbę punktów i znajdź dane dla działek związanych z tymi punktami: \n \
+                        -> Wymaga wprowadzenia liczby punktów do wylosowania. \n \
+unbuild         -> Wylicza wszystkie niezabudowane działki: \n \
+                        -> Wymaga wprowadzenia nazwy pliku, w którym informacje mają zostać zapisane (plik zostanie zapisany w \"{self.output_directory}[filename]\"). \n \
+test            -> Testuje aplikację. \n \
+list            -> Wymienia wszystkie dostepne usługi. \n \
+help            -> Wyświetla pomoc. \n \
+info            -> Wyświetla informacje o aplikacji. \n \
+exit            -> Wyjsie z aplikacji - można wpisać w każdym do tego przenaczonym miejscu. \n \
+language        -> Zmienia język [pl -> en]. \n \
+prompt          -> Zmienia symbol podpowiedzi. \n \
+history         -> Wyświetla listę przekazanych argumentów (wpisanych poleceń i arguemntów)."
         
     def change_prompt(self, symbol):
         self.prompt = symbol

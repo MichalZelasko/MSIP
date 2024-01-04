@@ -155,11 +155,9 @@ class Application:
 
     def handle_help(self):
         if self.language: 
-            description = self.conf.service_description_pl
+            print(self.conf.help_pl)
         else:
-            description = self.conf.service_description_en
-        for i, service in enumerate(self.conf.service_list):
-            print(service.ljust(16), "->", description[i])
+            print(self.conf.help_en)
 
     def handle_info(self):
         if self.language:
