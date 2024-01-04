@@ -21,7 +21,7 @@ python main.py
 
 UWAGA w niektórych systemach operacyjnych wymagane jest zastosowanie polecenia python3 zamiast python.
 
- 
+========================================================================================================================================
 
 [English]
 
