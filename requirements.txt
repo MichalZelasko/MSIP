@@ -1,0 +1,4 @@
+pip install pylcs
+pip install numpy
+pip install requests
+pip install pandas
