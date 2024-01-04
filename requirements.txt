@@ -1,4 +1,4 @@
-pip install pylcs
-pip install numpy
-pip install requests
-pip install pandas
+pylcs==0.1.1
+numpy==1.26.2
+requests==2.31.0
+pandas==2.1.4
