@@ -30,12 +30,15 @@ Użytkowanie:
 
 Aplikacja umozliwia wykonywanie następujących komend (każda komenda i argument zostają przekazane do aplikacji w momencie zatwierdzenia poprzez wciśnięcie przycisku Enter):
 
+&NewLine;
+
 coordinates      -> Znajduje współrzędne działki w oparciu o jej dane:
 
 -> Wamaga wprowadzenia oznaczenia obszaru ewidencyjnego i numer obrębu [np. S-23],
 
 -> Wymaga wprowadzenia numeru działki ewidencyjnej.
 
+&NewLine;
 
 data             -> Znajduje informacje o działce w oparciu o jej współrzędne
 
@@ -47,45 +50,57 @@ Liczba pomiedzy 7413470.40 i 7443881.84 (rzeczywisty zakres) lub liczbę pomięd
 
 Liczba pomiedzy 5537348.99 i 5555025.62 (rzeczywisty zakres) lub liczbę pomiędzy {0.0} i {100.0} (zostanie przeskalowane na zakres rzeczywisty).
 
+&NewLine;
 
 handler          -> Znajduje informacje o wszystkich działkach ze wskazanego pliku
 
 -> Wymaga wprowadzenia nazwy pliku z indeksami działek ewidencyjnych (lokalizacja pliku "../files/input/[filename]").
 
+&NewLine;
 
 parser           -> Zamienia plik .txt na plik .csv.
 
+&NewLine;
 
 points           -> Wylosuj wskazaną liczbę punktów i znajdź dane dla działek związanych z tymi punktami:
 
 -> Wymaga wprowadzenia liczby punktów do wylosowania.
 
+&NewLine;
 
 unbuild          -> Wylicza wszystkie niezabudowane działki:
 
 -> Wymaga wprowadzenia nazwy pliku, w którym informacje mają zostać zapisane (plik zostanie zapisany w "../files/output/[filename]").
 
+&NewLine;
 
 test             -> Testuje aplikację.
 
+&NewLine;
 
 list             -> Wymienia wszystkie dostepne usługi.
 
+&NewLine;
 
 help             -> Wyświetla pomoc.
 
+&NewLine;
 
 info             -> Wyświetla informacje o aplikacji.
 
+&NewLine;
 
 exit             -> Wyjsie z aplikacji - można wpisać w każdym do tego przenaczonym miejscu.
 
+&NewLine;
 
 language         -> Zmienia język [pl -> en].
 
+&NewLine;
 
 prompt           -> Zmienia symbol podpowiedzi.
 
+&NewLine;
 
 history          -> Wyświetla listę przekazanych argumentów (wpisanych poleceń i arguemntów).
 
@@ -120,6 +135,7 @@ Usage:
 
 The application allows you to execute the following commands (each command and argument are transferred to the application upon confirmation by pressing the Enter button):
 
+&NewLine;
 
 coordinates     -> Finds the coordinates of a plot based on its data:
 
@@ -127,6 +143,7 @@ coordinates     -> Finds the coordinates of a plot based on its data:
 
 -> Requires entering the registration plot number.
 
+&NewLine;
 
 data            -> Finds information about a plot based on its coordinates
 
@@ -138,44 +155,56 @@ A number between 7413470.40 and 7443881.84 (actual range) or a number between {0
 
 A number between 5537348.99 and 5555025.62 (actual range) or a number between {0.0} and {100.0} (will be scaled to actual range).
 
+&NewLine;
 
 handler         -> Finds information about all plots from the specified file
 
 -> Requires entering the file name with indexes of cadastral plots (file location "../files/input/[filename]").
 
+&NewLine;
 
 parser          -> Converts a .txt file to a .csv file.
 
+&NewLine;
 
 points          -> Randomize the indicated number of points and find data for the plots related to these points:
 
 -> Requires entering the number of points to be drawn.
 
+&NewLine;
 
 unbuild         -> Lists all unbuilt plots:
 
 -> Requires entering the name of the file in which the information is to be saved (the file will be saved in "../files/output/[filename]").
 
+&NewLine;
 
 test            -> Tests the application.
 
+&NewLine;
 
 list            -> Lists all available services.
 
+&NewLine;
 
 help            -> Displays help.
 
+&NewLine;
 
 info            -> Displays information about the application.
 
+&NewLine;
 
 exit            -> Exit the application - can be entered in any designated place.
 
+&NewLine;
 
 language        -> Changes the language [en -> pl].
 
+&NewLine;
 
 prompt          -> Changes the prompt symbol.
 
+&NewLine;
 
 history         -> Displays a list of passed arguments (entered commands and arguments).
